@@ -80,7 +80,7 @@ class Users extends CI_Controller {
     public function detail($user_id) 
     {
         $data["user"] = $this->users_model->get_user($user_id);
-        $data["page_title"] = "detail User";//added to pagetitle
+        $data["page_title"] = "detail User Information";//added to pagetitle
 
         $this->load->view('header', $data); 
         $this->load->view('users/detail', $data);
