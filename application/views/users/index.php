@@ -24,9 +24,9 @@
                     <td><?php echo $user["first_name"]; ?></td>
                     <td><?php echo $user["last_name"]; ?></td>
                     <td>
-
-                        <button class="btn btn-primary btn-sm"><a href="<?php echo site_url("users/view/$user[id]"); ?>">View</a></button>
-                        <button class="btn btn-outline-primary btn-sm onclick"><a href="<?php echo site_url("users/update/$user[id]"); ?>">Edit</a></button>
+                        
+                        <a href="<?php echo site_url("users/detail/$user[id]"); ?>"><span class="btn btn-primary btn-sm">View</span></a>
+                        <a href="<?php echo site_url("users/update/$user[id]"); ?>"><span class="btn btn-outline-primary btn-sm onclick">Edit</span></a>
                         
                         <!-- deleteボタンを押したら確認メッセージ -->
                         <button class="btn btn-sm"><a onclick="return confirm('Are you sure to delete this user?')" href="<?php echo site_url("users/delete/$user[id]"); ?>">Delete</a></button>
